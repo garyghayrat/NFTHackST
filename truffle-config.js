@@ -58,7 +58,7 @@ module.exports = {  /**
      },
 
      rinkeby:  {
-      provider: () => new HDWalletProvider(mnemonic, infuraURL),
+      provider: () => new HDWalletProvider(mnemonic, providerURL),
       network_id: 4,          // Rinkeby's network id
       gas: 5500000,        
     },
