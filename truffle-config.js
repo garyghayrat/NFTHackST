@@ -21,16 +21,15 @@
  const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
- const fs = require('fs');
- const mnemonic = fs.readFileSync(".secret").toString().trim();
- const providerURL = fs.readFileSync(".providerURL").toString();
+// const fs = require('fs');
+// const mnemonic = fs.readFileSync(".secret").toString().trim();
+// const providerURL = fs.readFileSync(".providerURL").toString();
 
-//  require('dotenv').config();
-//  const mnemonic = process.env["MNEMONIC"];
-//  const infuraProjectId = process.env["INFURA_PROJECT_ID"];
+require('dotenv').config();
+const mnemonic = process.env["MNEMONIC"];
+const infuraProjectId = process.env["INFURA_PROJECT_ID"];
 
 module.exports = {  /**
-
   * contracts_build_directory tells Truffle where to store compiled contracts
   */
   contracts_build_directory: './build/ethereum-contracts',
@@ -58,7 +57,13 @@ module.exports = {  /**
      },
 
      rinkeby:  {
-      provider: () => new HDWalletProvider(mnemonic, providerURL),
+      provider: () => new HDWalletProvider({
+        mnemonic: {
+          phrase: mnemonic
+        },
+        providerOrUrl:
+         `https://rinkeby.infura.io/v3/${infuraProjectId}`
+      }),
       network_id: 4,          // Rinkeby's network id
       gas: 5500000,        
     },
