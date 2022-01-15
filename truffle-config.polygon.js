@@ -64,6 +64,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
+      version: "0.8.2"
     }
   },
   db: {
