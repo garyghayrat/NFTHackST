@@ -23,7 +23,7 @@
 //
  const fs = require('fs');
  const mnemonic = fs.readFileSync(".secret").toString().trim();
- const infuraURL = fs.readFileSync(".infuraURL").toString();
+ const infuraURL = fs.readFileSync(".providerURL").toString();
 
 //  require('dotenv').config();
 //  const mnemonic = process.env["MNEMONIC"];

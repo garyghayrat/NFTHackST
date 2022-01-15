@@ -18,6 +18,10 @@ contract MyToken is ERC1155, Ownable {
         _setURI(newuri);
     }
 
+    function setPrice(uint _price) public onlyOwner {
+        price = _price;
+    }
+
     function mint(uint256 id, uint256 amount)
         public
         payable verifyAmount(amount)
@@ -36,5 +40,9 @@ contract MyToken is ERC1155, Ownable {
         require(address(this).balance > 0, "Balance is 0");
         (bool sent, bytes memory data) = owner().call{value: address(this).balance}("");
         require(sent, "Failed to send Ether");
+    }
+
+    function hello() public pure returns(string memory) {
+        return "hello world";
     }
 }
