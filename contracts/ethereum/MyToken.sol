@@ -6,8 +6,11 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyToken is ERC1155, Ownable {
     uint price = 0.1 ether;
+    uint constant FAN = 0;
 
-    constructor() ERC1155("") {}
+    constructor() ERC1155("https://gateway.pinata.cloud/ipfs/QmQyWerJX3qeaENUNRPh6ASD5rzaXMKQiLrrbebQRAStDW") {
+        _mint(msg.sender, FAN, 1, "");
+    }
 
     modifier verifyAmount(uint amount) {
         require (msg.value >= amount * price);
