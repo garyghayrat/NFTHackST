@@ -7,7 +7,7 @@ import data from "./data.js"
 
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
-const CONTRACT_ADDRESS = "0x38bF7640E28ce3b4fb4D8030166f34Ca738a32BD";
+const CONTRACT_ADDRESS = "0xb801153bbffc079e65e5eaab203ebecc22a1ab91";
 
 export default function App() {
 
