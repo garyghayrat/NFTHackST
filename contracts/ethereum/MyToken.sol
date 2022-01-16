@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract MyToken is ERC1155, Ownable {
     uint price = 0.1 ether;
@@ -54,6 +55,11 @@ contract MyToken is ERC1155, Ownable {
 
     function hello() public pure returns(string memory) {
         return "hello world";
+    }
+
+    function uri(uint256 _tokenId) override public view returns (string memory) {
+        return string(abi.encodePacked(
+            "https://gateway.pinata.cloud/ipfs/QmWDK9MpzBTZjsyozFrftkkDj1hkPy3NE4RWr39DCm9f4Z/", Strings.toString(_tokenId), ".json"));
     }
 }
 

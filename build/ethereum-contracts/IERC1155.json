@@ -312,7 +312,7 @@
         1322
       ],
       "IERC165": [
-        1733
+        1936
       ]
     },
     "id": 1323,
@@ -337,7 +337,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1323,
-        "sourceUnit": 1734,
+        "sourceUnit": 1937,
         "src": "120:47:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -350,7 +350,7 @@
               "id": 1205,
               "name": "IERC165",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1733,
+              "referencedDeclaration": 1936,
               "src": "357:7:2"
             },
             "id": 1206,
@@ -359,7 +359,7 @@
           }
         ],
         "contractDependencies": [
-          1733
+          1936
         ],
         "contractKind": "interface",
         "documentation": {
@@ -372,7 +372,7 @@
         "id": 1322,
         "linearizedBaseContracts": [
           1322,
-          1733
+          1936
         ],
         "name": "IERC1155",
         "nameLocation": "345:8:2",
@@ -1750,7 +1750,7 @@
         1322
       ],
       "IERC165": [
-        1733
+        1936
       ]
     },
     "id": 1323,
@@ -1775,7 +1775,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1323,
-        "sourceUnit": 1734,
+        "sourceUnit": 1937,
         "src": "120:47:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1788,7 +1788,7 @@
               "id": 1205,
               "name": "IERC165",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1733,
+              "referencedDeclaration": 1936,
               "src": "357:7:2"
             },
             "id": 1206,
@@ -1797,7 +1797,7 @@
           }
         ],
         "contractDependencies": [
-          1733
+          1936
         ],
         "contractKind": "interface",
         "documentation": {
@@ -1810,7 +1810,7 @@
         "id": 1322,
         "linearizedBaseContracts": [
           1322,
-          1733
+          1936
         ],
         "name": "IERC1155",
         "nameLocation": "345:8:2",
@@ -3187,7 +3187,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-16T15:43:57.481Z",
+  "updatedAt": "2022-01-16T16:31:53.988Z",
   "devdoc": {
     "details": "Required interface of an ERC1155 compliant contract, as defined in the https://eips.ethereum.org/EIPS/eip-1155[EIP]. _Available since v3.1._",
     "events": {
