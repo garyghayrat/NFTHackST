@@ -56,12 +56,12 @@ INFURA_PROJECT_ID="<Your Infura Project ID>"
 
 ## Minting Rinkeby NFTs 
 1. Login to your Metamask account and choose the Rinkeby network with your funded Rinkeby address.
-2. Click `Mint NFT`, then `Confirm`.
+2. Click `Mint NFT`, then `Confirm` on the Metamask pop up screen.
 3. Wait 15-20 minutes and check your Rinkeby address at https://testnets.opensea.io/get-listed/step-two. You should see your minted NFT in a new collection.
 
 ## Minting Mumbai Polygon NFTs 
 1. Login to your Metamask account and choose the Mumbai Polygon network with your funded Mumbai Polygon address.
-2. Click `Mint NFT`, then `Confirm`.
+2. Click `Mint NFT`, then `Confirm`on the Metamask pop up screen.
 3. Wait 15-20 minutes and check your Mumbai Polygon address at https://testnets.opensea.io/get-listed/step-two. You should see your minted NFT in a new collection.
 
 
