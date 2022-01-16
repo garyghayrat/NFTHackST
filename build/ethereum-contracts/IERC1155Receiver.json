@@ -1107,7 +1107,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-16T02:42:55.738Z",
+  "updatedAt": "2022-01-16T15:43:57.482Z",
   "devdoc": {
     "details": "_Available since v3.1._",
     "kind": "dev",
@@ -1148,16 +1148,5 @@
     "kind": "user",
     "methods": {},
     "version": 1
-  },
-  "db": {
-    "callBytecode": {
-      "id": "0x2cdc5c5f756f555319272af6740217ecb0d9451b44e748689b42eb518eb5ef1b"
-    },
-    "createBytecode": {
-      "id": "0x2cdc5c5f756f555319272af6740217ecb0d9451b44e748689b42eb518eb5ef1b"
-    },
-    "contract": {
-      "id": "0x7025f33af14e4fe635fd4cb622d83d1935efefde065bf75d05628f0dda8dad5b"
-    }
   }
 }

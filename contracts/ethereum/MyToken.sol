@@ -11,7 +11,7 @@ contract MyToken is ERC1155, Ownable {
     uint constant POTIONS = 2;
     uint constant PLEX = 3;
 
-    constructor() ERC1155("https://ipfs.io/ipfs/QmZQjSU6e4A3WNty7NnAbvcZEpbFRCZxKAwVwqPvKF3GrP/0.json") {
+    constructor() ERC1155("https://gateway.pinata.cloud/ipfs/QmWDK9MpzBTZjsyozFrftkkDj1hkPy3NE4RWr39DCm9f4Z/{id}.json") {
         _mint(msg.sender, FAN, 1, "");
         _mint(msg.sender, OKO, 100, "");
         _mint(msg.sender, POTIONS, 50, "");
