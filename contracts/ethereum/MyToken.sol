@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -7,15 +7,21 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyToken is ERC1155, Ownable {
     uint price = 0.1 ether;
     uint constant FAN = 0;
+    uint constant OKO = 1;
+    uint constant POTIONS = 2;
+    uint constant PLEX = 3;
 
-    constructor() ERC1155("https://gateway.pinata.cloud/ipfs/QmQyWerJX3qeaENUNRPh6ASD5rzaXMKQiLrrbebQRAStDW") {
+    constructor() ERC1155("https://ipfs.io/ipfs/QmZQjSU6e4A3WNty7NnAbvcZEpbFRCZxKAwVwqPvKF3GrP/0.json") {
         _mint(msg.sender, FAN, 1, "");
+        _mint(msg.sender, OKO, 100, "");
+        _mint(msg.sender, POTIONS, 50, "");
+        _mint(msg.sender, PLEX, 25, "");
     }
 
-    modifier verifyAmount(uint amount) {
-        require (msg.value >= amount * price);
-        _;
-    }
+    // modifier verifyAmount(uint amount) {
+    //     require (msg.value >= amount * price);
+    //     _;
+    // }
 
     function setURI(string memory newuri) public onlyOwner {
         _setURI(newuri);
@@ -24,11 +30,12 @@ contract MyToken is ERC1155, Ownable {
     function setPrice(uint _price) public onlyOwner {
         price = _price;
     }
-
+    
     function mint(uint256 id, uint256 amount)
         public
-        payable verifyAmount(amount)
+        payable 
     {
+        // require(msg.value == price);
         _mint(msg.sender, id, amount, "");
     }
 
