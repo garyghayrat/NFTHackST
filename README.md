@@ -41,12 +41,28 @@ INFURA_PROJECT_ID="<Your Infura Project ID>"
 1. Compile your contracts with `truffle compile`.
 2. Migrate your contracts to the Rinkeby ETH testnet with `truffle migrate --network rinkeby`.
 3. You can check your contracts by copy and pasting the truffle contract address output into https://rinkeby.etherscan.io/
+4. Save this contract address for the minting process.
 
 ## Compiling and Migrating to Polygon Mumbai testnet
 1. Compile your contracts with `npm run compile:polygon`
 2. Migrate your contracts to the Mumbai Polygon testnet with `truffle migrate --config truffle-config.polygon.js --network=polygon_infura_testnet`
 3. You can check you contracts by checking the address on https://mumbai.polygonscan.com/
+4. Save this contract address for the minting process.
 
+## Installing and running frontend
+1. In project root, cd into the `frontend/hello-world` directory 
+2. Use `npm install` to install the front-end
+3. Start the front-end with `npm run start`.
+
+## Minting Rinkeby NFTs 
+1. Login to your Metamask account and choose the Rinkeby network with your funded Rinkeby address.
+2. Click `Mint NFT`, then `Confirm`.
+3. Wait 15-20 minutes and check your Rinkeby address at https://testnets.opensea.io/get-listed/step-two. You should see your minted NFT in a new collection.
+
+## Minting Mumbai Polygon NFTs 
+1. Login to your Metamask account and choose the Mumbai Polygon network with your funded Mumbai Polygon address.
+2. Click `Mint NFT`, then `Confirm`.
+3. Wait 15-20 minutes and check your Mumbai Polygon address at https://testnets.opensea.io/get-listed/step-two. You should see your minted NFT in a new collection.
 
 
 
