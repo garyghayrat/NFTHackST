@@ -8047,7 +8047,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-15T18:42:21.474Z",
+  "updatedAt": "2022-01-16T02:42:55.740Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "kind": "dev",
@@ -8058,5 +8058,16 @@
     "kind": "user",
     "methods": {},
     "version": 1
+  },
+  "db": {
+    "callBytecode": {
+      "id": "0x344c7a3da9c219bc9c7097198c8d7de5a5a408a3c949c6a65140e47eca9453a2"
+    },
+    "createBytecode": {
+      "id": "0x11b6ebf56d553fab90946afa140d147c982c55d48f35f14670cc5d04f486cf4d"
+    },
+    "contract": {
+      "id": "0xd3a57759dd1173a57f9a95c0ec734ef49e684415eddbb8b79a31afa92cc074f4"
+    }
   }
 }

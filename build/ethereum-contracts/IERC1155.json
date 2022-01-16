@@ -3187,7 +3187,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-15T18:42:21.471Z",
+  "updatedAt": "2022-01-16T02:42:55.737Z",
   "devdoc": {
     "details": "Required interface of an ERC1155 compliant contract, as defined in the https://eips.ethereum.org/EIPS/eip-1155[EIP]. _Available since v3.1._",
     "events": {
@@ -3234,5 +3234,16 @@
     "kind": "user",
     "methods": {},
     "version": 1
+  },
+  "db": {
+    "callBytecode": {
+      "id": "0x2cdc5c5f756f555319272af6740217ecb0d9451b44e748689b42eb518eb5ef1b"
+    },
+    "createBytecode": {
+      "id": "0x2cdc5c5f756f555319272af6740217ecb0d9451b44e748689b42eb518eb5ef1b"
+    },
+    "contract": {
+      "id": "0xe5ff8f418ad26f89fe0c5bce6f7b0495af808c74d1dbbda2a753f7cc3fefeaa7"
+    }
   }
 }
